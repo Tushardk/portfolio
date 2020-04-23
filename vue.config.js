@@ -1,5 +1,8 @@
 // vue.config.js
 module.exports = {
-    outputDir:'build',
+    outputDir:'docs',
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/profile/'
+    : '/',
     filenameHashing : false
   }
