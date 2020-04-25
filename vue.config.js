@@ -4,5 +4,14 @@ module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
     ? '/profile/'
     : '/',
-    filenameHashing : false
+    filenameHashing : false,
+
+    chainWebpack: (config) => {
+      config
+        .plugin('html')
+        .tap((args) => {
+          args[0].title = 'Tushar Kshirsagar | kshirsagartd@gmail.com | +919503789589 | Front End/UI Developer';
+          return args;
+        });
+    },
   }

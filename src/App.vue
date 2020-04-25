@@ -16,12 +16,19 @@ export default {
 </script>
 
 <style>
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: inherit;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background: #e7e4da;
+  min-height: 100vh;
 }
 </style>
