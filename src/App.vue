@@ -1,27 +1,42 @@
 <template>
   <div id="app">
-    <Home msg="Welcome to Your Vue.js App"/>
+    <Home msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Home from "./components/Home.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Home
   }
-}
+};
 </script>
 
-<style>
-*, *::before, *::after {
+<style lang="scss">
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
 }
 html {
   font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: #ffffff;
+  }
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
