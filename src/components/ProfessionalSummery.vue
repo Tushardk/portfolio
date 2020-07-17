@@ -6,7 +6,7 @@
     <div class="section-details">
       Front end developer with 5 and half years of experience, Expert in developing Responsive & Interactive websites.
       Expert in HTML, CSS, JavaScript, JQuery. Currently learning Vue JS and looking out for opportunities as a
-      Vue JS front end developer.
+      Vue JS Front End Developer.
     </div>
   </div>
 </template>
@@ -21,14 +21,14 @@ export default {
 
 .porfessional-summery-section {
   .section-title {
-    letter-spacing: 0.1rem;
     position: relative;
-    margin-bottom: 2%;
-    padding: 2% 0;
     border-bottom: 2px solid #1e477b;
     margin-bottom: 20px;
     padding: 10px 30px;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    background-color: #aabdaa;
+    display: inline-block;
+    border-radius: 20px 20px 0 0;
   }
 
   .section-details {

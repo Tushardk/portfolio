@@ -3,6 +3,7 @@
     <NameProfile />
     <ProfessionalSummery />
     <WorkExperience />
+    <SkillsSection />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import NameProfile from "./NameProfile";
 import ProfessionalSummery from "./ProfessionalSummery";
 import WorkExperience from "./WorkExperience";
+import SkillsSection from "./SkillsSection";
 
 
 
@@ -19,7 +21,8 @@ export default {
   components: {
     NameProfile,
     ProfessionalSummery,
-    WorkExperience
+    WorkExperience,
+    SkillsSection
   }
 };
 </script>
