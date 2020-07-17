@@ -18,17 +18,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .porfessional-summery-section {
+  margin-bottom: 30px;
+
   .section-title {
     position: relative;
     border-bottom: 2px solid #1e477b;
     margin-bottom: 20px;
-    padding: 10px 30px;
+    padding: 10px 30px 5px;
     font-size: 1rem;
-    background-color: #aabdaa;
+    background-color: #e2e2f3;
     display: inline-block;
     border-radius: 20px 20px 0 0;
+    transform: rotate(-10deg);
   }
 
   .section-details {
