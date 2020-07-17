@@ -1,7 +1,7 @@
 <template>
   <div class="skills-section">
     <div class="section-title">
-      <i class="fas fa-laptop-code"></i> SKILLS
+      <i class="fas fa-list"></i> SKILLS
     </div>
     <div class="section-details">
       <ul>
