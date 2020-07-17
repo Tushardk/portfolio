@@ -12,7 +12,10 @@
           <div class="tenure-ball"></div>
           <div class="tenure-line"></div>
         </div>
-        <div class="tenure-dates">2016 - 2020</div>
+        <div class="tenure-dates">
+          <span class="from">Feb 2019</span> To
+          <span class="to">Current</span>
+        </div>
         <div class="work-details">
           <div class="company-name">Quinstreet India Private Limited</div>
           <div class="position-name">Front End Developer</div>
@@ -37,7 +40,10 @@
             </svg>-->
           </div>
         </div>
-        <div class="tenure-dates">2016 - 2020</div>
+        <div class="tenure-dates">
+          <span class="from">Aug 2015</span> To
+          <span class="to">Jan 2016</span>
+        </div>
         <div class="work-details">
           <div class="company-name">Indecomm Global Services</div>
           <div class="position-name">Front End Developer</div>
@@ -66,7 +72,10 @@
             </svg>-->
           </div>
         </div>
-        <div class="tenure-dates">2016 - 2020</div>
+        <div class="tenure-dates">
+          <span class="from">Dec 2014</span> To
+          <span class="to">Jul 2015</span>
+        </div>
         <div class="work-details">
           <div class="company-name">Aexonic Technologies Private Limited</div>
           <div class="position-name">Front End Developer</div>
@@ -132,6 +141,12 @@ export default {
     }
     .tenure-dates {
       flex: 2;
+      align-self: center;
+
+      .from,
+      .to {
+        display: block;
+      }
     }
 
     .work-details {
