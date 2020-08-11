@@ -1,8 +1,11 @@
 <template>
   <div class="work-experience-section">
-    <div class="section-title">
-      <i class="fas fa-laptop-code"></i> WORK EXPERIENCE
-    </div>
+    <SectionTitle>
+      <template v-slot:icon>
+        <i class="fas fa-laptop-code"></i>
+      </template>
+      <template v-slot:title>&nbsp;WORK EXPERIENCE</template>
+    </SectionTitle>
 
     <!-- 1st -->
 
@@ -33,11 +36,7 @@
     <div class="section-details">
       <div class="tenure-ball-line">
         <div class="tenure-ball"></div>
-        <div class="tenure-line">
-          <!-- <svg id="chart" width="100%" height="100%">
-              <line x1="20" y1="20" x2="20" y2="130" />
-          </svg>-->
-        </div>
+        <div class="tenure-line"></div>
       </div>
       <div class="tenure-dates">
         <span class="from">Aug 2015</span> To
@@ -65,11 +64,7 @@
     <div class="section-details">
       <div class="tenure-ball-line">
         <div class="tenure-ball"></div>
-        <div class="tenure-line">
-          <!-- <svg id="chart" width="100%" height="100%">
-              <line x1="20" y1="20" x2="20" y2="130" />
-          </svg>-->
-        </div>
+        <div class="tenure-line"></div>
       </div>
       <div class="tenure-dates">
         <span class="from">Dec 2014</span> To
@@ -94,26 +89,19 @@
 </template>
 
 <script>
+import SectionTitle from "./utils/SectionTitle";
+
 export default {
-  name: "WorkExperience"
+  name: "WorkExperience",
+  components: {
+    SectionTitle,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .work-experience-section {
   margin-bottom: 30px;
-
-  .section-title {
-    position: relative;
-    border-bottom: 2px solid #1e477b;
-    margin-bottom: 20px;
-    padding: 10px 30px 5px;
-    font-size: 1rem;
-    background-color: #e2e2f3;
-    display: inline-block;
-    border-radius: 20px 20px 0 0;
-    transform: rotate(-10deg);
-  }
 
   .section-details {
     display: flex;

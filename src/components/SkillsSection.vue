@@ -1,8 +1,12 @@
 <template>
   <div class="skills-section">
-    <div class="section-title">
-      <i class="fas fa-list"></i> SKILLS
-    </div>
+    <SectionTitle>
+      <template v-slot:icon>
+        <i class="fas fa-list"></i>
+      </template>
+      <template v-slot:title>&nbsp;SKILLS</template>
+    </SectionTitle>
+
     <div class="section-details">
       <ul>
         <li>HTML</li>
@@ -11,25 +15,39 @@
         <li>Javascript (ECMAScript)</li>
         <li>JQuery</li>
         <li>Vue JS</li>
+        <li>Vuex</li>
         <li>Vue CLI</li>
+        <li>Vue Router</li>
+        <li>Vue SSR(Nuxt.js)</li>
         <li>JSON</li>
         <li>AJAX</li>
         <li>Webpack</li>
+        <li>Babel JS</li>
+        <li>Node JS</li>
+        <li>Npm</li>
+        <li>Npx</li>
+        <li>ESLint</li>
+        <li>Vetur</li>
+        <li>VS Code</li>
+        <li>Prettier</li>
+        <li>Emmet</li>
         <li>Git</li>
         <li>Github</li>
         <li>Basic Image Editing</li>
-        <li>Responsive Designs</li>
-        <li>Web User Interfaces</li>
-        <li>Web Development Projects</li>
-        <li>Software Best Practices</li>
+        <li>Responsive Web Design</li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import SectionTitle from "./utils/SectionTitle";
+
 export default {
-  name: "SkillsSection"
+  name: "SkillsSection",
+  components: {
+    SectionTitle,
+  },
 };
 </script>
 
@@ -44,18 +62,6 @@ li {
 
 .skills-section {
   margin-bottom: 30px;
-
-  .section-title {
-    position: relative;
-    border-bottom: 2px solid #1e477b;
-    margin-bottom: 20px;
-    padding: 10px 30px 5px;
-    font-size: 1rem;
-    background-color: #e2e2f3;
-    display: inline-block;
-    border-radius: 20px 20px 0 0;
-    transform: rotate(-10deg);
-  }
 
   .section-details {
     display: flex;

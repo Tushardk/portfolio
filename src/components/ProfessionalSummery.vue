@@ -1,10 +1,13 @@
 <template>
   <div class="porfessional-summery-section">
-    <div class="section-title">
-      <i class="fas fa-pen"></i> PROFESSIONAL SUMMERY
-    </div>
+    <SectionTitle>
+      <template v-slot:icon>
+        <i class="fas fa-pen"></i>
+      </template>
+      <template v-slot:title>&nbsp;PROFESSIONAL SUMMERY</template>
+    </SectionTitle>
     <div class="section-details">
-      Front end developer with 5 and half years of experience, Expert in developing Responsive & Interactive websites.
+      Front end developer with 5 and half years of experience, Expert in developing Interactive & Responsive websites.
       Expert in HTML, CSS, JavaScript, JQuery. Currently learning Vue JS and looking out for opportunities as a
       Vue JS Front End Developer.
     </div>
@@ -12,26 +15,19 @@
 </template>
 
 <script>
+import SectionTitle from "./utils/SectionTitle";
+
 export default {
-  name: "ProfessionalSummery"
+  name: "ProfessionalSummery",
+  components: {
+    SectionTitle,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .porfessional-summery-section {
   margin-bottom: 30px;
-
-  .section-title {
-    position: relative;
-    border-bottom: 2px solid #1e477b;
-    margin-bottom: 20px;
-    padding: 10px 30px 5px;
-    font-size: 1rem;
-    background-color: #e2e2f3;
-    display: inline-block;
-    border-radius: 20px 20px 0 0;
-    transform: rotate(-10deg);
-  }
 
   .section-details {
     display: flex;
