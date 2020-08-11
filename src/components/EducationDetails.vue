@@ -13,13 +13,12 @@
         <div class="duration-ball"></div>
         <div class="duration-line"></div>
       </div>
-      <div class="duration-dates">
-        <span class="passout-year">July 2014</span>
-      </div>
+      <div class="passout-year">July 2014</div>
       <div class="degree-details">
         <div class="degree-name">Master of Computer Applications (MCA)</div>
         <div class="university-name">Pune University</div>
       </div>
+      <div class="place">Baramati, Maharashtra</div>
     </div>
 
     <!-- 2nd  -->
@@ -28,13 +27,12 @@
         <div class="duration-ball"></div>
         <div class="duration-line"></div>
       </div>
-      <div class="duration-dates">
-        <span class="passout-year">April 2011</span>
-      </div>
+      <div class="passout-year">April 2011</div>
       <div class="degree-details">
         <div class="degree-name">Bachelor of Computer Applications (BCA)</div>
         <div class="university-name">Swami Ramanand Teerth Marathwada University</div>
       </div>
+      <div class="place">Nanded, Maharashtra</div>
     </div>
   </div>
 </template>
@@ -79,12 +77,14 @@ export default {
         background-color: #868181;
       }
     }
-    .duration-dates {
+    .passout-year {
       flex: 2;
+      align-self: center;
+      display: block;
     }
 
     .degree-details {
-      flex: 7;
+      flex: 5;
       .degree-name {
         font-size: 1rem;
         font-weight: bold;
@@ -94,6 +94,12 @@ export default {
         margin: 0.5rem 0;
         font-size: 0.9rem;
       }
+    }
+    .place {
+      flex: 2;
+      align-self: center;
+      display: block;
+      font-style: italic;
     }
   }
 }
