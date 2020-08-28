@@ -15,7 +15,7 @@
         <div class="tenure-line"></div>
       </div>
       <div class="tenure-dates">
-        <span class="from">Feb 2019</span> To
+        <span class="from">Feb 2016</span> To
         <span class="to">Current</span>
       </div>
       <div class="work-details">
